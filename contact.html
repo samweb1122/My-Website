@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Abu Zayd Suleiman</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="logo.png" alt="logo" class="logo" onerror="this.style.display='none'">
+        <div class="brand-text">
+          <h1>Abu Zayd Suleiman Adam Gbale</h1>
+          <p class="subtitle">Writer • Qur’an Teacher • Researcher • Educator</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="books.html">Books</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+        <button class="menu-btn" aria-label="Toggle menu" onclick="toggleMobileNav()">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card contact-section">
+      <h2>Contact & Connect</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>If you'd like to partner, invite me to speak, or support book printing, please reach out.</p>
+          <ul>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/2349073528916">‪+234 907 352 8916‬</a></li>
+            <li><strong>Email:</strong> <a href="mailto:adamusuleiman20001@gmail.com">adamusuleiman20001@gmail.com</a></li>
+            <li><strong>Facebook:</strong> <a href="https://www.facebook.com/suleiman.Adam.Gbale" target="_blank" rel="noreferrer">suleiman Adam Gbale</a></li>
+          </ul>
+
+          <p class="small muted">To support the printing of <em>Purpose Before Degree</em> or discuss collaborations, please message via WhatsApp or email.</p>
+
+          <p><strong>Short support message (copy & send):</strong></p>
+          <textarea id="supportText" rows="5" readonly>Assalāmu alaykum. I want to support the Nigerian printing of "Purpose Before Degree" by Abu Zayd Suleiman. Please how can I contribute? JazakAllāhu khayran.</textarea>
+          <div style="margin-top:8px">
+            <button class="btn" onclick="copySupport()">Copy support message</button>
+            <a class="btn" style="margin-left:8px" href="https://wa.me/2349073528916" target="_blank" rel="noreferrer">Open WhatsApp</a>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="copyMessage(event)">
+          <label for="nm">Your name</label>
+          <input id="nm" required placeholder="Your name">
+          <label for="em">Your email</label>
+          <input id="em" type="email" required placeholder="Your email">
+          <label for="msg">Message</label>
+          <textarea id="msg" rows="5" placeholder="Write your message..."></textarea>
+          <button type="submit" class="btn">Copy message</button>
+          <p class="small muted">This copies your message so you can paste it into WhatsApp or your email client.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Abu Zayd Suleiman Adam Gbale — Abu Zayd Institute.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
